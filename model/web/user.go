@@ -5,7 +5,7 @@ type RoleAllowed string
 type UserUpdateServiceRequest struct {
 	Name  string `json:"name"`
 	Email string `validate:"email" json:"email"`
-	Role  string `validate:"required,oneof=buyer seller" json:"role"`
+	Role  string `validate:"oneof=buyer seller" json:"role"`
 }
 
 type UserServiceRequest struct {

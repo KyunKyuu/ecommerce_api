@@ -24,9 +24,11 @@ create table products(
     name varchar(255) not null,
     quantity int not null,
     seller_id_fk integer not null,
+    category_id_fk integer not null,
     created_at timestamp default current_timestamp,
     updated_at timestamp default current_timestamp,
-    CONSTRAINT fk_seller FOREIGN KEY (seller_id_fk) REFERENCES users(user_id) ON DELETE CASCADE
+    CONSTRAINT fk_seller FOREIGN KEY (seller_id_fk) REFERENCES users(user_id) ON DELETE CASCADE,
+    CONSTRAINT fk_category FOREIGN KEY (category_id_fk) REFERENCES categories(category_id) ON DELETE CASCADE
 );
 
 create table orders (
@@ -38,11 +40,4 @@ create table orders (
     updated_at timestamp default current_timestamp,
     CONSTRAINT fk_user FOREIGN KEY (user_id_fk) REFERENCES users(user_id) ON DELETE CASCADE,
     CONSTRAINT fk_product FOREIGN KEY (product_id_fk) REFERENCES products(product_id) ON DELETE CASCADE
-);
-
-create table product_categories (
-    product_id_fk integer not null,
-    category_id_fk integer not null,
-    CONSTRAINT fk_product FOREIGN KEY (product_id_fk) REFERENCES products(product_id) ON DELETE CASCADE,
-    CONSTRAINT fk_category FOREIGN KEY (category_id_fk) REFERENCES categories(category_id) ON DELETE CASCADE
 );

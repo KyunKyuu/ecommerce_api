@@ -16,6 +16,7 @@ import (
 	"github.com/joho/godotenv"
 	echojwt "github.com/labstack/echo-jwt/v4"
 	"github.com/labstack/echo/v4"
+	"github.com/labstack/echo/v4/middleware"
 )
 
 type CustomValidator struct {
@@ -45,8 +46,16 @@ func main() {
 	r.Validator = &CustomValidator{validator: validator.New(validator.WithRequiredStructEnabled())}
 	r.HTTPErrorHandler = helper.BindAndValidate
 
+	r.Use(middleware.Logger())
+	r.Use(middleware.Recover())
+
+	// Grup Route dengan middleware role "seller"
+	buyerGroup := r.Group("/buyer")
+	buyerGroup.Use(helper.RoleMiddleware(tokenUseCase, "buyer"))
+	buyerGroup.GET("/:id", userController.GetUser)
+
 	r.POST("/register", userController.SaveUser)
-	r.GET("/user/:id", userController.GetUser)
+
 	r.GET("/users", userController.GetUserList)
 	r.PUT("/user/:id", userController.UpdateUser, JWTProtection())
 	r.DELETE("/user/:id", userController.DeleteUser, JWTProtection())

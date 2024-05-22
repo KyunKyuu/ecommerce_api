@@ -10,7 +10,7 @@ create table users(
     deleted_at timestamp default current_timestamp
 );
 
-create table category(
+create table categories(
     category_id serial primary key,
     name varchar(255) not null,
     created_at timestamp default current_timestamp,
@@ -19,7 +19,7 @@ create table category(
   
 );
 
-create table product(
+create table products(
     product_id serial primary key,
     name varchar(255) not null,
     quantity int not null,
@@ -37,12 +37,12 @@ create table orders (
     created_at timestamp default current_timestamp,
     updated_at timestamp default current_timestamp,
     CONSTRAINT fk_user FOREIGN KEY (user_id_fk) REFERENCES users(user_id) ON DELETE CASCADE,
-    CONSTRAINT fk_product FOREIGN KEY (product_id_fk) REFERENCES product(product_id) ON DELETE CASCADE
+    CONSTRAINT fk_product FOREIGN KEY (product_id_fk) REFERENCES products(product_id) ON DELETE CASCADE
 );
 
-create table category_product (
+create table product_categories (
     product_id_fk integer not null,
     category_id_fk integer not null,
-    CONSTRAINT fk_product FOREIGN KEY (product_id_fk) REFERENCES product(product_id) ON DELETE CASCADE,
-    CONSTRAINT fk_category FOREIGN KEY (category_id_fk) REFERENCES category(category_id) ON DELETE CASCADE
+    CONSTRAINT fk_product FOREIGN KEY (product_id_fk) REFERENCES products(product_id) ON DELETE CASCADE,
+    CONSTRAINT fk_category FOREIGN KEY (category_id_fk) REFERENCES categories(category_id) ON DELETE CASCADE
 );

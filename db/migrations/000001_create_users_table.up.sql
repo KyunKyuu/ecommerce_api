@@ -26,7 +26,7 @@ create table product(
     seller_id_fk integer not null,
     created_at timestamp default current_timestamp,
     updated_at timestamp default current_timestamp,
-    CONSTRAINT fk_seller FOREIGN KEY (seller_id_fk) REFERENCES users(user_id)
+    CONSTRAINT fk_seller FOREIGN KEY (seller_id_fk) REFERENCES users(user_id) ON DELETE CASCADE
 );
 
 create table orders (
@@ -36,13 +36,13 @@ create table orders (
     quantity integer not null,
     created_at timestamp default current_timestamp,
     updated_at timestamp default current_timestamp,
-    CONSTRAINT fk_user FOREIGN KEY (user_id_fk) REFERENCES users(user_id),
-    CONSTRAINT fk_product FOREIGN KEY (product_id_fk) REFERENCES product(product_id)
+    CONSTRAINT fk_user FOREIGN KEY (user_id_fk) REFERENCES users(user_id) ON DELETE CASCADE,
+    CONSTRAINT fk_product FOREIGN KEY (product_id_fk) REFERENCES product(product_id) ON DELETE CASCADE
 );
 
 create table category_product (
     product_id_fk integer not null,
     category_id_fk integer not null,
-    CONSTRAINT fk_product FOREIGN KEY (product_id_fk) REFERENCES product(product_id),
-    CONSTRAINT fk_category FOREIGN KEY (category_id_fk) REFERENCES category(category_id)
+    CONSTRAINT fk_product FOREIGN KEY (product_id_fk) REFERENCES product(product_id) ON DELETE CASCADE,
+    CONSTRAINT fk_category FOREIGN KEY (category_id_fk) REFERENCES category(category_id) ON DELETE CASCADE
 );

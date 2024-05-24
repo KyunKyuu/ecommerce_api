@@ -1,11 +1,11 @@
 # CHALLENGE TIM MIKTI - ECommerce
 
 ## 🎯. Fitur
-Buyer: Pengguna dapat memesan produk.
-Seller: Penjual dapat menawarkan dan menjual produk.
-Autentikasi: Pengguna dapat melakukan pendaftaran dan login.
-Otorisasi: Setiap fungsi diakses berdasarkan peran pengguna.
-CRUD: Setiap pengguna dapat melakukan operasi Create, Read, Update, dan Delete sesuai dengan hak akses masing-masing.
+- Buyer: Pengguna dapat memesan produk.
+- Seller: Penjual dapat menawarkan dan menjual produk.
+- Autentikasi: Pengguna dapat melakukan pendaftaran dan login.
+- Otorisasi: Setiap fungsi diakses berdasarkan peran pengguna.
+- CRUD: Setiap pengguna dapat melakukan operasi Create, Read, Update, dan Delete sesuai dengan hak akses masing-masing.
 
 ## 🛠️. Flowchart
 ![flow ecommerce drawio](https://github.com/KyunKyuu/ecommerce_api/assets/57865250/81574029-76cb-4440-ab61-b449aa870799)

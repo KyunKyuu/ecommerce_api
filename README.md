@@ -35,7 +35,7 @@ Flowchart di atas menggambarkan alur kerja dari platform E-Commerce ini, mulai d
 
 <br/>
 ## 💾. Design Database -
-![drawSQL-image-export-2024-05-24](https://github.com/KyunKyuu/ecommerce_api/assets/57865250/3e1ff331-1423-451a-b9e8-29e4128ae291)
+![erd](https://github.com/KyunKyuu/ecommerce_api/assets/57865250/3e1ff331-1423-451a-b9e8-29e4128ae291)
 
 ### Penjelasan Database
 Database di atas menggambarkan hubungan antara 4 entitas utama dalam sistem E-Commerce: `users`, `product`s, `category`, dan `orders` 

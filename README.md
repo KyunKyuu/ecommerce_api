@@ -35,8 +35,7 @@ Flowchart di atas menggambarkan alur kerja dari platform E-Commerce ini, mulai d
 
 <br/>
 ## 💾. Design Database -
-![drawSQL-image-export-2024-05-24 (1)](https://github.com/KyunKyuu/ecommerce_api/assets/57865250/e17ccf13-eacf-4fef-aee6-facb711246ea)
-
+![drawSQL-image-export-2024-05-24](https://github.com/KyunKyuu/ecommerce_api/assets/57865250/3e1ff331-1423-451a-b9e8-29e4128ae291)
 
 ### Penjelasan Database
 Database di atas menggambarkan hubungan antara 4 entitas utama dalam sistem E-Commerce: `users`, `product`s, `category`, dan `orders` 
@@ -51,6 +50,32 @@ Database di atas menggambarkan hubungan antara 4 entitas utama dalam sistem E-Co
 - updated_at: Waktu terakhir kali akun diperbarui.
 - deleted_at: Waktu ketika akun dihapus (jika dihapus).
 
+**Tabel Products**
+- product_id: Primary key untuk mengidentifikasi setiap produk secara unik.
+- name:  Nama produk.
+- quantity: Jumlah produk yang tersedia.
+- category_id_fk : Foreign key yang mengacu ke `category_id` dari tabel `categories`, menunjukkan category dari produk tersebut.
+- seller_id_fk: Foreign key yang mengacu ke `user_id` dari tabel `users`, menunjukkan penjual dari produk tersebut.
+- created_at: Waktu saat produk dibuat.
+- updated_at: Waktu terakhir kali produk diperbarui.
+- deleted_at: Waktu ketika produk dihapus (jika dihapus).
+
+**Tabel Category**
+- category_id : Primary key untuk mengidentifikasi setiap category secara unik.
+- name:  Nama category.
+- created_at: Waktu saat produk dibuat.
+- updated_at: Waktu terakhir kali produk diperbarui.
+- deleted_at: Waktu ketika produk dihapus (jika dihapus).
+
+**Tabel Orders**
+- order_id: Primary key untuk mengidentifikasi setiap order secara unik.
+- user_id_fk : Foreign key yang mengacu ke `user_id` dari tabel `users`, menunjukkan pembeli dari produk tersebut.
+- product_id_fk: Foreign key yang mengacu ke `product_id` dari tabel `products`, menunjukkan product yang dibeli oleh user.
+- quantity: Jumlah produk yang dibeli.
+- created_at: Waktu saat order dibuat.
+- updated_at: Waktu terakhir kali order diperbarui.
+- deleted_at: Waktu ketika order dihapus (jika dihapus).
+- 
 
 <br/> <br/>
 # 🤝. Team

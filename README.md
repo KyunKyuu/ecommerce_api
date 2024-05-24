@@ -33,11 +33,20 @@ Flowchart di atas menggambarkan alur kerja dari platform E-Commerce ini, mulai d
 **Tambah Produk**
 - Pengguna dengan Role Seller dapat menambahkan Barang yang ingin dijual
 
-
+<br/>
 ## 💾. Design Database -
 
 ![drawSQL-image-export-2024-05-24](https://github.com/KyunKyuu/ecommerce_api/assets/57865250/d17c30fa-a595-40f3-af46-e79be105522a)
 ### Penjelasan Database
 Database di atas menggambarkan hubungan antara 4 entitas utama dalam sistem E-Commerce: `users`, `product`s, `category`, dan `orders` 
 
+**Tabel Users**
+- user_id: Kunci utama yang digunakan untuk mengidentifikasi setiap pengguna.
+- name: Nama pengguna.
+- email: Alamat email unik setiap pengguna.
+- role: Peran pengguna (BUYER atau SELLER), ditentukan oleh enum Role.
+- password: Kata sandi yang digunakan untuk login.
+- created_at: Waktu saat akun dibuat.
+- updated_at: Waktu terakhir kali akun diperbarui.
+- deleted_at: Waktu ketika akun dihapus (jika dihapus).
 

@@ -35,8 +35,8 @@ Flowchart di atas menggambarkan alur kerja dari platform E-Commerce ini, mulai d
 
 <br/>
 ## 💾. Design Database -
+![drawSQL-image-export-2024-05-24 (1)](https://github.com/KyunKyuu/ecommerce_api/assets/57865250/ac9e5bf4-1d3f-48b5-ba1e-f080652c4bfe)
 
-![drawSQL-image-export-2024-05-24](https://github.com/KyunKyuu/ecommerce_api/assets/57865250/d17c30fa-a595-40f3-af46-e79be105522a)
 ### Penjelasan Database
 Database di atas menggambarkan hubungan antara 4 entitas utama dalam sistem E-Commerce: `users`, `product`s, `category`, dan `orders` 
 
@@ -49,4 +49,55 @@ Database di atas menggambarkan hubungan antara 4 entitas utama dalam sistem E-Co
 - created_at: Waktu saat akun dibuat.
 - updated_at: Waktu terakhir kali akun diperbarui.
 - deleted_at: Waktu ketika akun dihapus (jika dihapus).
+
+
+<br/> <br/>
+# 🤝. Team
+<div align="center">
+  <table width="100%">
+    <thead></thead>
+    <tbody>
+      <tr>
+        <th>Name</th>
+        <td width="100" align="center">Teguh</td>
+        <td width="100" align="center">Heidi</td>
+        <td width="100" align="center">Irvan</td>
+        <td width="100" align="center">Wini</td>
+        <td width="100" align="center">David</td>
+      </tr>
+      <tr>
+        <th>GitHub</th>
+        <td width="100" align="center">
+          <a href=" ">
+            <img
+              src="http://img.shields.io/badge/rizkanfirmansyah-green?style=social&logo=github"
+            />
+          </a>
+        </td>
+        <td width="100" align="center">
+          <a href=" ">
+            <img
+              src="http://img.shields.io/badge/MaulanaYusuf20-green?style=social&logo=github"
+            />
+          </a>
+        </td>
+        <td width="100" align="center">
+          <a href="">
+            <img
+              src="http://img.shields.io/badge/KyunKyuu-green?style=social&logo=github"
+            />
+          </a>
+        </td>
+        <td align="center">
+          <a href=" ">
+            <img
+              src="http://img.shields.io/badge/riruriruto-green?style=social&logo=github"
+            />
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 

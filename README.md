@@ -7,6 +7,8 @@
 - Otorisasi: Setiap fungsi diakses berdasarkan role pengguna.
 - CRUD: Setiap pengguna dapat melakukan operasi Create, Read, Update, dan Delete sesuai dengan hak akses masing-masing.
 
+<br/>
+
 ## 🛠️. Flowchart
 ![flow ecommerce drawio](https://github.com/KyunKyuu/ecommerce_api/assets/57865250/81574029-76cb-4440-ab61-b449aa870799)
 
@@ -32,7 +34,10 @@ Flowchart di atas menggambarkan alur kerja dari platform E-Commerce ini, mulai d
 - Pengguna dengan Role Seller dapat menambahkan Barang yang ingin dijual
 
 
-## 💾. ERD
+## 💾. Design Database -
 
+![drawSQL-image-export-2024-05-24](https://github.com/KyunKyuu/ecommerce_api/assets/57865250/d17c30fa-a595-40f3-af46-e79be105522a)
+### Penjelasan Database
+Database di atas menggambarkan hubungan antara 4 entitas utama dalam sistem E-Commerce: `users`, `product`s, `category`, dan `orders` 
 
 

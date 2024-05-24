@@ -33,9 +33,10 @@ Flowchart di atas menggambarkan alur kerja dari platform E-Commerce ini, mulai d
 **Tambah Produk**
 - Pengguna dengan Role Seller dapat menambahkan Barang yang ingin dijual
 
-<br/>
+<br/> <br/>
+
 ## 💾. Design Database -
-![erd](https://github.com/KyunKyuu/ecommerce_api/assets/57865250/3e1ff331-1423-451a-b9e8-29e4128ae291)
+![erd](https://github.com/KyunKyuu/ecommerce_api/assets/57865250/4618dde0-1685-483d-901b-552216bb9817)
 
 ### Penjelasan Database
 Database di atas menggambarkan hubungan antara 4 entitas utama dalam sistem E-Commerce: `users`, `product`s, `category`, dan `orders` 
@@ -75,7 +76,7 @@ Database di atas menggambarkan hubungan antara 4 entitas utama dalam sistem E-Co
 - created_at: Waktu saat order dibuat.
 - updated_at: Waktu terakhir kali order diperbarui.
 - deleted_at: Waktu ketika order dihapus (jika dihapus).
-- 
+
 
 <br/> <br/>
 # 🤝. Team

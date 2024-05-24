@@ -96,28 +96,35 @@ Database di atas menggambarkan hubungan antara 4 entitas utama dalam sistem E-Co
         <td width="100" align="center">
           <a href=" ">
             <img
-              src="http://img.shields.io/badge/rizkanfirmansyah-green?style=social&logo=github"
+              src="http://img.shields.io/badge/teguh-green?style=social&logo=github"
             />
           </a>
         </td>
         <td width="100" align="center">
           <a href=" ">
             <img
-              src="http://img.shields.io/badge/MaulanaYusuf20-green?style=social&logo=github"
+              src="http://img.shields.io/badge/heidi-green?style=social&logo=github"
             />
           </a>
         </td>
         <td width="100" align="center">
           <a href="">
             <img
-              src="http://img.shields.io/badge/KyunKyuu-green?style=social&logo=github"
+              src="http://img.shields.io/badge/irvan-green?style=social&logo=github"
             />
           </a>
         </td>
         <td align="center">
           <a href=" ">
             <img
-              src="http://img.shields.io/badge/riruriruto-green?style=social&logo=github"
+              src="http://img.shields.io/badge/wini-green?style=social&logo=github"
+            />
+          </a>
+        </td>
+         <td align="center">
+          <a href=" ">
+            <img
+              src="http://img.shields.io/badge/david-green?style=social&logo=github"
             />
           </a>
         </td>

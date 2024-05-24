@@ -4,7 +4,7 @@
 - Buyer: Pengguna dapat memesan produk.
 - Seller: Penjual dapat menawarkan dan menjual produk.
 - Autentikasi: Pengguna dapat melakukan pendaftaran dan login.
-- Otorisasi: Setiap fungsi diakses berdasarkan peran pengguna.
+- Otorisasi: Setiap fungsi diakses berdasarkan role pengguna.
 - CRUD: Setiap pengguna dapat melakukan operasi Create, Read, Update, dan Delete sesuai dengan hak akses masing-masing.
 
 ## 🛠️. Flowchart
